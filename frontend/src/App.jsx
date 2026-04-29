@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import './App.css'
-import { WebSocketProvider } from './context/WebSocketContext'
 import { DidWallet } from './components/DidWallet'
 import { ZkProver } from './components/ZkProver'
 import { BridgeWatcher } from './components/BridgeWatcher'
@@ -42,9 +41,7 @@ function compareBigIntLike(a, b) {
 function App() {
   return (
     <ApolloProvider client={client}>
-      <WebSocketProvider>
-        <AppContent />
-      </WebSocketProvider>
+      <AppContent />
     </ApolloProvider>
   )
 }

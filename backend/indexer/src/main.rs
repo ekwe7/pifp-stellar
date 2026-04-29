@@ -23,7 +23,6 @@ pub(crate) mod profiles;
 pub(crate) mod rate_limit;
 pub(crate) mod rpc;
 pub(crate) mod webhook;
-pub(crate) mod ws;
 pub(crate) mod graphql;
 
 #[cfg(test)]
